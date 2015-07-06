@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:padding="20dp"
+            android:background="@drawable/query_back"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="-50dp" >
+
+            <LinearLayout 
+    android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+<TextView
+       
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        
+        android:text="Query Type:"
+       android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+</LinearLayout>
+<LinearLayout 
+    android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="40"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+         android:gravity="center"
+        android:orientation="horizontal">
+<Button 
+       android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        style="@android:style/ButtonBar"
+         android:id="@+id/brief"
+        android:background="#fcbd32"
+android:text="FREE" />
+    <TextView
+       
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+       android:layout_weight="1"
+        android:text="Brief Answer"
+       android:gravity="center"
+       android:textSize="16sp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+</LinearLayout>
+   <LinearLayout 
+    android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+<View android:layout_width="fill_parent"
+    
+        android:layout_height="2dp"
+        android:background="#fcbd32"/>
+</LinearLayout>
+<LinearLayout 
+    android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+         android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="40"
+        android:gravity="center"
+        android:orientation="horizontal">
+    <Button 
+       android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#fcbd32"
+        style="@android:style/ButtonBar"
+         android:id="@+id/detail"
+        android:text="PAID" 
+         />
+    <TextView
+       
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+      android:layout_weight="1"
+         android:gravity="center"
+          android:textSize="16sp"
+        android:text="Detailed Answer"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+</LinearLayout>
+
+          <!---add your views here-->
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="top|right"
+            android:clickable="true"
+            android:src="@drawable/close" />
+    </FrameLayout>
+
+</LinearLayout>

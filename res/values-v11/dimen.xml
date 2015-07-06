@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textsize">23sp</dimen>
+    <dimen name="head_textsize">18sp</dimen>
+    <dimen name="scroll_textsize">18sp</dimen>
+    <dimen name="dis_textsize">12sp</dimen>
+    <dimen name="dis_text_textsize">10sp</dimen>
+</resources>

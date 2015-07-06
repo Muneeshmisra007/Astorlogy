@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textsize">25sp</dimen>
+     <dimen name="text_size">25dip</dimen>
+    <dimen name="head_textsize">20sp</dimen>
+    <dimen name="scroll_textsize">18sp</dimen>
+    <dimen name="dis_textsize">14sp</dimen>
+    <dimen name="dis_text_textsize">12sp</dimen>
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+    <dimen name="mob">20dp</dimen>
+    <dimen name="horo_size">16dp</dimen>
+    <dimen name="qbp">15dp</dimen>
+    <dimen name="dady_left">55dp</dimen>
+    <dimen name="dady_right">45dp</dimen>
+    <dimen name="dady_top">20dp</dimen>
+    
+</resources>

@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.appsbazaar.astrology"
+    android:versionCode="4"
+    android:versionName="1.1.1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+<uses-permission android:name="com.android.vending.BILLING" />
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.astrology.menu.splash.SplashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.astrology.menu.splash.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="appsbazaar.daily.horoscope.MainMenu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="appsbazaar.daily.horoscope.AllSignes"
+            android:screenOrientation="portrait" />
+         <activity
+            android:name="appsbazaar.daily.horoscope.DailyHoro"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.feedback.FeedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.blundell.tutorial.simpleinappbillingv3.ui.PurchaseQueryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.astrology.menu.splash.AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="apps.MainActivity"
+            android:label="More Apps"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="applist.MainActivity"
+            android:label="More Apps"
+            android:screenOrientation="portrait" />
+												>
+        <activity
+            android:name="com.astrology.menu.splash.Disclaimer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aquarius.AquariusMonthly"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aquarius.AquariusJanuary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aquarius.AquariusFebuary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aquarius.AquariusMarch"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aquarius.AquariusApril"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aquarius.AquariusMay"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aquarius.AquariusJune"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aquarius.AquariusJuly"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aquarius.AquariusAugust"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aquarius.AquariusSeptember"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aquarius.AquariusOctober"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aquarius.AquariusNovember"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aquarius.AquariusDecember"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aries.AriesMonthly"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aries.AriesJanuary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aries.AriesFebuary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aries.AriesMarch"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aries.AriesApril"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aries.AriesMay"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aries.AriesJune"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aries.AriesJuly"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aries.AriesAugust"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aries.AriesSeptember"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aries.AriesOctober"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aries.AriesNovember"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aries.AriesDecember"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cancer.CancerMonthly"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cancer.CancerJanuary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cancer.CancerFebuary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cancer.CancerMarch"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cancer.CancerApril"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cancer.CancerMay"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cancer.CancerJune"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cancer.CancerJuly"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cancer.CancerAugust"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cancer.CancerSeptember"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cancer.CancerOctober"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cancer.CancerNovember"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cancer.CancerDecember"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.capricorn.CapricornMonthly"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.capricorn.CapricornJanuary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.capricorn.CapricornFebuary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.capricorn.CapricornMarch"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.capricorn.CapricornApril"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.capricorn.CapricornMay"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.capricorn.CapricornJune"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.capricorn.CapricornJuly"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.capricorn.CapricornAugust"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.capricorn.CapricornSeptember"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.capricorn.CapricornOctober"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.capricorn.CapricornNovember"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.capricorn.CapricornDecember"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gemini.GeminiMonthly"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gemini.GeminiJanuary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gemini.GeminiFebuary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gemini.GeminiMarch"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gemini.GeminiApril"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gemini.GeminiMay"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gemini.GeminiJune"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gemini.GeminiJuly"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gemini.GeminiAugust"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gemini.GeminiSeptember"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gemini.GeminiOctober"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gemini.GeminiNovember"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gemini.GeminiDecember"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.leo.LeoMonthly"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.leo.LeoJanuary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.leo.LeoFebuary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.leo.LeoMarch"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.leo.LeoApril"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.leo.LeoMay"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.leo.LeoJune"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.leo.LeoJuly"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.leo.LeoAugust"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.leo.LeoSeptember"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.leo.LeoOctober"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.leo.LeoNovember"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.leo.LeoDecember"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.libra.LibraMonthly"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.libra.LibraJanuary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.libra.LibraFebuary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.libra.LibraMarch"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.libra.LibraApril"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.libra.LibraMay"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.libra.LibraJune"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.libra.LibraJuly"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.libra.LibraAugust"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.libra.LibraSeptember"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.libra.LibraOctober"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.libra.LibraNovember"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.libra.LibraDecember"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pisces.PiscesMonthly"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pisces.PiscesJanuary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pisces.PiscesFebuary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pisces.PiscesMarch"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pisces.PiscesApril"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pisces.PiscesMay"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pisces.PiscesJune"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pisces.PiscesJuly"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pisces.PiscesAugust"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pisces.PiscesSeptember"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pisces.PiscesOctober"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pisces.PiscesNovember"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pisces.PiscesDecember"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sagittarius.SagittariusMonthly"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sagittarius.SagittariusJanuary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sagittarius.SagittariusFebuary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sagittarius.SagittariusMarch"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sagittarius.SagittariusApril"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sagittarius.SagittariusMay"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sagittarius.SagittariusJune"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sagittarius.SagittariusJuly"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sagittarius.SagittariusAugust"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sagittarius.SagittariusSeptember"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sagittarius.SagittariusOctober"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sagittarius.SagittariusNovember"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sagittarius.SagittariusDecember"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.scorpio.ScorpioMonthly"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.scorpio.ScorpioJanuary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.scorpio.ScorpioFebuary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.scorpio.ScorpioMarch"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.scorpio.ScorpioApril"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.scorpio.ScorpioMay"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.scorpio.ScorpioJune"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.scorpio.ScorpioJuly"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.scorpio.ScorpioAugust"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.scorpio.ScorpioSeptember"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.scorpio.ScorpioOctober"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.scorpio.ScorpioNovember"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.scorpio.ScorpioDecember"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.taurus.TaurusMonthly"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.taurus.TaurusJanuary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.taurus.TaurusFebuary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.taurus.TaurusMarch"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.taurus.TaurusApril"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.taurus.TaurusMay"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.taurus.TaurusJune"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.taurus.TaurusJuly"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.taurus.TaurusAugust"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.taurus.TaurusSeptember"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.taurus.TaurusOctober"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.taurus.TaurusNovember"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.taurus.TaurusDecember"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.virgo.VirgoMonthly"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.virgo.VirgoJanuary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.virgo.VirgoFebuary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.virgo.VirgoMarch"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.virgo.VirgoApril"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.virgo.VirgoMay"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.virgo.VirgoJune"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.virgo.VirgoJuly"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.virgo.VirgoAugust"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.virgo.VirgoSeptember"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.virgo.VirgoOctober"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.virgo.VirgoNovember"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.virgo.VirgoDecember"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <activity
+            android:name="com.startapp.android.publish.list3d.List3DActivity"
+            android:theme="@android:style/Theme" />
+        <activity
+            android:name="com.startapp.android.publish.AppWallActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent" />
+    </application>
+
+</manifest>

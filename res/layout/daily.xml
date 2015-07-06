@@ -1,0 +1,134 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/page_bg"
+    android:orientation="vertical" 
+    android:layout_gravity="center">
+<!-- <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+       
+         /> -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+         >
+
+        <ImageView
+            android:id="@+id/imgeView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/leo_text_icon" />
+
+        <TextView
+            android:id="@+id/horoscope_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgeView"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="leo"
+            android:textColor="#fef5f8"
+            android:textSize="@dimen/textsize" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight=".8"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:paddingRight="5dp" >
+
+        <TextView
+            android:id="@+id/year_textview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            
+            android:textColor="#ffd37a"
+             android:text="Loading..."
+            android:textSize="@dimen/head_textsize" />
+
+        <ScrollView
+            android:id="@+id/desc_scrool"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.95"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+              android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left|right"
+                android:text="Loading..."
+                android:textColor="#fffffd"
+                android:textSize="@dimen/scroll_textsize" />
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/dis_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:text="fsdfdsfsfsf"
+            android:textColor="#fffffd"
+            android:textSize="@dimen/dis_textsize"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/dis_desc_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:text="fsdfdsfsfsf"
+            android:textColor="#fffffd"
+            android:textSize="@dimen/dis_text_textsize"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".3"
+        android:gravity="bottom" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="80dp" >
+
+            <ImageView
+                android:id="@+id/imb"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/query_btn_tag" />
+
+            <Button
+                android:id="@+id/query"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/query_btn"
+                android:gravity="center" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
